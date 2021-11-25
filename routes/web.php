@@ -21,10 +21,12 @@ Route::get('admin/admin/index','Admin\AdminController@index')->name('admin.index
 
 //producte
 Route::get('admin/product/index','Admin\ProductController@index')->name('product.index');
+Route::get('admin/product/addproduct','Admin\AddProductController@addproduct')->name('addproduct');
 
 //typeproducte
 Route::get('admin/typeproduct/index','Admin\TypeproductContrller@index')->name('typeproduct.index');
-
+Route::get('admin/typeproduct/addtypeproduct','Admin\AddTypeproductController@addtypeproduct')->name('addtypeproduct');
+Route::post('admin/typeproduct/addtypeproduct/create','Admin\AddTypeProductController@create')->name('addtypeproduct.create');
 //user
 Route::get('admin/user/index','Admin\UserContrller@index')->name('user.index');
 
@@ -44,3 +46,8 @@ Auth::routes();
 Route::get('/about', 'HomeController@about');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// route create
+
+
+

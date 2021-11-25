@@ -77,11 +77,23 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
+                               
+                                
+					
                             </div>
                         </div>
+                        
+					<div class="container" style="text-align: center;">
+						<div class="">
+							<a href="{{url('/')}}">
+								<button class="btn btn-warning"  style="width: 40%;">
+									เข้าสู่ระบบ
+								</button>
+							</a>
+							<a href="{{route('register')}}">
+								<button class="btn btn-warning" style="width: 40%;">
+									ลืมรหัสผ่าน
+								</button></a>
                     </form>
                 </div>
             </div>

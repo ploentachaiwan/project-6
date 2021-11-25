@@ -11,4 +11,5 @@ class TypeproductContrller extends Controller
         return view('admin.typeproduct.index');
     }
     
+   
 }
